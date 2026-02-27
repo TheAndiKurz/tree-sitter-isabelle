@@ -1,0 +1,29 @@
+==================
+Basic Theory
+==================
+theory Example imports Main begin
+
+definition add_zero :: "nat" where
+  "add_zero = 0 + 0"
+
+lemma zero_plus_zero: "0 + 0 = 0"
+  apply auto
+  done
+
+end
+---
+(source_file
+  (theory_definition
+    (identifier)
+    (identifier))
+  (definition_command
+    (identifier)
+    (inner_syntax)
+    (inner_syntax))
+  (lemma_command
+    (identifier)
+    (inner_syntax)
+    (proof
+      (method
+        (identifier))))
+)
